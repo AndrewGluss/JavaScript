@@ -1,3 +1,6 @@
+//Дан массив объектов. Каждый объект является идентификационной карточкой человека. 
+//Нам нужно хранить только уникальные значения в этом массиве. 
+//Реализуйте функцию, которая будет выполнять эту работу.
 let users = [{
     "name": "Leanne Graham",
     "username": "Bret",
@@ -351,12 +354,12 @@ let users = [{
     }
 }
 ]
-console.log('dlina users', users.length)
+//console.log('dlina users', users.length)
 function uniqElem(users){
     for (let i = 0; i < users.length; i++){
         for (let j = i+1; j < users.length; j++ ){
             if (JSON.stringify(users[i])===JSON.stringify(users[j])){
-                console.log('ravno')
+                //console.log('ravno')
                 users.splice(j,j)
             }
         }
@@ -364,4 +367,4 @@ function uniqElem(users){
 }
 //console.log(users)
 uniqElem(users)
-console.log('dlina users', users.length)
+console.log(users)
