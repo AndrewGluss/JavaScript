@@ -1,3 +1,4 @@
+// Написать функцию checkAge() для проверки возраста
 function checkAge(age_1){
     let age_2 = 18
     let age_3 = 60 
